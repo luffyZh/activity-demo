@@ -19,7 +19,7 @@ const IndexPage = () => {
         text: '页面刷新成功， 刷新接口数据',
       });
     }
-    const pl = new PullRefresh({
+    new PullRefresh({
       refreshListener: _refreshListener,
       refreshStyleConfig: {
         color: '#fff',
@@ -27,7 +27,6 @@ const IndexPage = () => {
         backgroundColor: 'dodgerblue',
       }
     });
-    // pl.setEnabled(false);
   }, [])
 
   return (
