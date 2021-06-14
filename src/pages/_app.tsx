@@ -1,22 +1,19 @@
 import type { AppProps } from 'next/app';
 import Head from 'next/head';
-import { useRouter } from 'next/router';
-import Layout from '../components/Layout';
-import { RouterTitlePath } from '../constants/ConstTypes';
-import 'antd/dist/antd.css';
 
 function MyApp({ Component, pageProps }: AppProps) {
-  const router = useRouter();
   return (
-    <Layout title={RouterTitlePath[router.pathname]}>
+    <div className="container">
       <Head>
         <meta charSet="utf-8" />
-        <meta name="viewport" content="initial-scale=1.0, width=device-width" />
+        <meta name="viewport" content="width=414,user-scalable=no,viewport-fit=cover" />
         <link rel='shortcut icon' href='/images/favicon.ico' type='image/ico'/>
-        <title>{RouterTitlePath[router.pathname]}</title>
+        <link rel="stylesheet" type="text/css" href="../style/global.css" />
+        <link rel="stylesheet" type="text/css" href="../style/coupon.css" />
+        <title>活动Demo</title>
       </Head>
       <Component {...pageProps} />
-    </Layout>
+    </div>
   );
 }
 

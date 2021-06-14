@@ -1,0 +1,122 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  /* 显示给用户的高光是他们成功点击的标识，以及暗示了他们点击的元素 */
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
+
+ /* 禁止复制 */
+ body {
+  -webkit-overflow-scrolling: touch;
+  word-wrap: break-word;
+  word-break: break-all;
+  -webkit-user-select: none;
+  user-select: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  background-color: dodgerblue;
+  padding-bottom: 140px;
+}
+
+#__next {
+  padding: 10px;
+}
+
+.title {
+  color: #fff;
+  text-align: center;
+}
+
+.pendant-container {
+  position: fixed;
+  bottom: 40px;
+  right: 20px;
+  width: 64px;
+  height: 64px;
+}
+
+.pendant-container .icon {
+  width: 100%;
+  height: 100%;
+}
+
+.coupon-container {
+  position: fixed;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.coupon-wrap {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.coupon-wrap .icon {
+  width: 300px;
+  height: 300px;
+  opacity: 1;
+}
+
+.coupon-wrap .receive-btn {
+  position: absolute;
+  width: 160px;
+  height: 50px;
+  background-color: #fff;
+  padding: 10px 20px;
+  margin-top: 60px;
+  color: red;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.coupon-wrap .time-container {
+  position: absolute;
+  color: #fff;
+  margin-top: 160px;
+}
+.svg-container {
+  width: 320px;
+  height: 220px;
+}
+
+.svg-container .row1 {
+  display: flex;
+  justify-content: space-between;
+}
+
+.svg-container .row2 {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row-reverse;
+  margin-top: 160px;
+}
+
+.svg-container svg {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.svg-container .btn-container {
+  position: absolute;
+  bottom: -60px;
+}
+
+.fixed-container {
+  background-color: #fff;
+  height: 40px;
+  position: fixed;
+  width: 100%;
+  bottom: 0;
+  left: 0;
+}

@@ -1,0 +1,15 @@
+.red__packet_rotate {
+  -webkit-transform: scale(0.1) rotateY(270deg);
+  transform: scale(0.1) rotateY(270deg);
+}
+
+.red__packet_rotate_active {
+  -webkit-transform: scale(1) rotateY(0) translate(0px, 0px);
+  transform: scale(1) rotateY(0) translate(0px, 0px);
+  -webkit-transform-origin: center center;
+  transform-origin: center center;
+  -webkit-transition: transform .6s cubic-bezier(0.33333333, 0, 0.66666667, 1);
+  transition: transform .6s cubic-bezier(0.33333333, 0, 0.66666667, 1);
+}
+
+

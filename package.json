@@ -8,18 +8,18 @@
     "type-check": "tsc"
   },
   "dependencies": {
-    "@ant-design/icons": "^4.6.2",
-    "antd": "^4.15.0",
     "isomorphic-unfetch": "^3.1.0",
+    "lottie-web": "^5.7.11",
     "next": "latest",
-    "query-string": "^7.0.0",
+    "raf": "^3.4.1",
     "react": "^17.0.1",
     "react-dom": "^17.0.1",
-    "react-markdown": "^5.0.3"
+    "sweetalert": "^2.1.2"
   },
   "devDependencies": {
     "@types/antd": "^1.0.0",
     "@types/node": "^12.12.21",
+    "@types/raf": "^3.4.0",
     "@types/react": "^17.0.2",
     "@types/react-dom": "^17.0.1",
     "typescript": "4.0"
