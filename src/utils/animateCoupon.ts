@@ -25,7 +25,7 @@ export function showCoupon(redPacketDom: any, pendantDom: any) {
 }
 
 export function hideCoupon(redPacketDom: any, pendantDom: any) {
-  (window as any).refreshEnabled = true;
+  (window as any).__pull_refresh_enabled = true;
   return new Promise((resolve) => {
     const targetPos = pendantDom.getBoundingClientRect()
     const curPos = redPacketDom.getBoundingClientRect()
